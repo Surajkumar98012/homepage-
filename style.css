@@ -1,0 +1,179 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+/*
+ body 
+      {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+      }*/
+
+.maincontainer{
+   position: relative;
+}
+.card1{
+position: absolute;
+transform-style: preserve-3d;
+transition: all 1s ease; 
+}
+.card1:hover{
+  transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+.back{
+  backface-visibility: hidden;
+  position: absolute;
+  transform: rotateY(180deg);
+  cursor: pointer;
+
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:purple;
+  opacity: 0.95;
+  overflow-x: hidden;
+  border-radius: 3%;
+  box-shadow: black 3px 3px 6px;
+  transition: 0.5s;
+  margin-top: 85px;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+.a{
+	position: relative;
+}
+.a img{
+	transition: .3s;
+}
+.a:hover img{
+	filter: blur(2px) brightness(60%);
+}
+.a :not(img){
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  transition: .3s;
+}
+.a:hover :not(img){
+	opacity: 1;
+}
+
+
+#pop1{
+	position: absolute;
+	top: -24px;
+	left:-21px;
+	width: 140px;
+	opacity: 85%;
+}
+#pop1{
+  position: absolute;
+  top: -20px;
+  left:-15px;
+  width: 120px;
+  opacity: 85%;
+}
+#pop{
+  position: absolute;
+  top: -85px;
+  left:-30px;
+  width: 120px;
+  opacity: 85%;
+}
+#pop{
+  position: absolute;
+  top: -80px;
+  left:-15px;
+  width: 120px;
+  opacity: 85%;
+}
+#pop2{
+  position: absolute;
+  top: -90px;
+  left:-15px;
+  width: 120px;
+  opacity: 85%;
+}
+.me{
+  background-image: url(come.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.woman{
+  background-image: url(women2.jpeg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 85%;
+}
+   .swiper-container 
+      {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      }
+    .swiper-slide 
+      {
+      background-position: center;
+      background-size: cover;
+      width: 500px;
+      height: 300px;
+      background:#000;
+      }
